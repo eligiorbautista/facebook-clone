@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "klavika";
+    src: url("assets/fonts/klavika/klavika-medium.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.title-section>h1 {
+    font-size: 5rem;
+    color: #2d72fd;
+    font-family: 'klavika', sans-serif;
+}
+
+.title-section>p {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 450px;
+    height: 390px;
+    padding: 15px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px 2px #00000033;
+}
+
+.card>input {
+    display: block;
+    height: 55px;
+    width: 98%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.text-inputs {
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #c8cdd6;
+}
+
+.card>p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.card>hr {
+    width: 98%;
+    margin-bottom: 25px;
+    color: #fcfcfc;
+}
+
+#btn-login {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #2d72fd;
+    box-shadow: 0px 0px 2px 0px #2d72fd;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#btn-forgot {
+    text-decoration: none;
+    color: #2d72fd;
+    font-size: 0.9rem;
+}
+
+#btn-forgot:hover {
+    text-decoration: underline;
+
+}
+
+#btn-create-account {
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #34b134;
+    box-shadow: 0px 0px 2px 0px #34b134;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    width: 220px;
+}
+
+#btn-create-account:hover {
+    background-color: #2f992f;
+}
+
+@media (max-width: 961px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+
+    }
+
+    .title-section>h1 {
+        font-size: 5rem;
+        color: #2d72fd;
+        font-family: 'klavika', sans-serif;
+        text-align: center;
+    }
+
+    .title-section>p {
+        font-size: 2rem;
+        color: #000000;
+        text-align: center;
+    }
+}
