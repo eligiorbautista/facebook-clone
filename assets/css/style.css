@@ -112,21 +112,22 @@ body {
 
 @media (max-width: 961px) {
     .container {
+        margin-top: 0vh;
         display: grid;
         grid-template-columns: auto;
-        gap: 50px;
+        gap: 40px;
 
     }
 
     .title-section>h1 {
-        font-size: 5rem;
+        font-size: 3.5rem;
         color: #2d72fd;
         font-family: 'klavika', sans-serif;
         text-align: center;
     }
 
     .title-section>p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #000000;
         text-align: center;
     }
@@ -134,8 +135,8 @@ body {
     .card {
         margin-left: auto;
         margin-right: auto;
-        width: 400px;
-        height: 390px;
+        width: 360px;
+        height: 370px;
         padding: 15px 15px;
         border-radius: 8px;
         box-shadow: 0px 2px 2px 2px #00000033;
