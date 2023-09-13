@@ -112,7 +112,7 @@ body {
 
 @media (max-width: 961px) {
     .container {
-        margin-top: 0vh;
+        margin-top: 5vh;
         display: grid;
         grid-template-columns: auto;
         gap: 40px;
