@@ -81,10 +81,14 @@ body {
     text-align: center;
 }
 
-.card>hr {
-    width: 98%;
-    margin-bottom: 25px;
-    color: #fcfcfc;
+.hr {
+    color: #b4b4b4;
+}
+
+.or {
+    color: #000;
+    font-size: 0.8rem;
+    margin: 0px 10px;
 }
 
 #btn-login {
@@ -122,6 +126,7 @@ body {
 #btn-create-account:hover {
     background-color: #2f992f;
 }
+
 
 .empty-section {
     text-align: center;
@@ -202,5 +207,41 @@ body {
         padding: 15px 15px;
         border-radius: 8px;
         box-shadow: none;
+    }
+
+    .hr {
+        color: #b4b4b4;
+        font-size: 0.8rem;
+    }
+
+    .or {
+        color: #000;
+        font-size: 0.8rem;
+        margin: 0px 10px;
+    }
+
+    #btn-create-account {
+        cursor: pointer;
+        font-size: 0.9rem;
+        background-color: #f5f5f5b0;
+        box-shadow: none;
+        border: 1px solid #717171b0;
+        font-weight: bold;
+        color: #000000;
+        width: 250px;
+    }
+
+    .title-section>h1 {
+        font-size: 1.8rem;
+        color: #2d72fd;
+        font-family: 'klavika', sans-serif;
+        margin-bottom: -50px;
+    }
+    
+   
+    
+    .title-section>p {
+        display: none;
+    
     }
 }
