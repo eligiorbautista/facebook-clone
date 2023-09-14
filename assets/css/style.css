@@ -80,15 +80,18 @@ body {
     margin-bottom: 25px;
     text-align: center;
 }
+.card>hr {
+    width: 98%;
+    margin-bottom: 25px;
+    color: #fcfcfc;
+}
 
 .hr {
-    color: #b4b4b4;
+    display: none;
 }
 
 .or {
-    color: #000;
-    font-size: 0.8rem;
-    margin: 0px 10px;
+    display: none;
 }
 
 #btn-login {
@@ -210,11 +213,13 @@ body {
     }
 
     .hr {
+        display: inline;
         color: #b4b4b4;
         font-size: 0.8rem;
     }
 
     .or {
+        display: inline;
         color: #000;
         font-size: 0.8rem;
         margin: 0px 10px;
@@ -238,7 +243,9 @@ body {
         margin-bottom: -50px;
     }
     
-   
+    .card>hr{
+        display:none;
+    }
     
     .title-section>p {
         display: none;
