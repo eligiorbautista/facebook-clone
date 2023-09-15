@@ -241,6 +241,7 @@ footer a:hover {
     }
 
     .card {
+        margin-top: 8vh;
         margin-left: auto;
         margin-right: auto;
     }
