@@ -289,11 +289,9 @@ body {
 @media (max-width: 485px) {
     .hr {
 
-        font-size: 1rem;
-    }
-
-    .or {
         font-size: 0.8rem;
     }
+
+ 
 
 }
