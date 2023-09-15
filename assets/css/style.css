@@ -256,6 +256,10 @@ body {
 
 /* Mobile phones */
 @media (max-width: 647px) {
+    .container {
+        
+        margin-top: 3vh;
+    }
 
     .hr {
 
