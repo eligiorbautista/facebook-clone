@@ -259,7 +259,7 @@ body {
 
     .hr {
 
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .or {
@@ -270,10 +270,7 @@ body {
 
 /* Smaller mobile phones */
 @media (max-width: 485px) {
-    .hr {
-
-        font-size: 0.8rem;
-    }
+     
 
 
 
