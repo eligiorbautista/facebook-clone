@@ -4,88 +4,154 @@
 
 @font-face {
     font-family: "klavika";
-    src: url("assets/fonts/klavika/klavika-medium.otf");
+    src: url("../fonts/klavika/klavika-medium.otf");
+}
+
+@font-face {
+    font-family: "SFProText-Regular";
+    src: url("../fonts/sfpro/SFProText-Regular-1.ttf");
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "SFProText-Regular", Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #000000;
     transition: all 0.5s ease-in-out;
 }
 
 body {
-    background-color: #f5f5f5b0;
+    background-color: #f0f2f5;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 145px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.footer-container {
+    margin-top: 2vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.small-footer-container {
+    display: none;
+}
+
+.copyright {
+    margin: 10px 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer li a {
+    text-decoration: none;
+    font-size: 0.6rem;
+    color: #8a8d91;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-hr {
+    width: 130%;
+    margin-top: 1vh;
+    color: #fcfcfc;
 }
 
 .container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 150px;
+    gap: 110px;
     align-items: center;
     justify-content: center;
-    margin-top: 25vh;
+
+
 }
 
 .title-section>h1 {
     cursor: default;
-    font-size: 5rem;
+    font-size: 3.3rem;
     color: #2d72fd;
-    font-family: 'klavika', sans-serif;
+    font-family: sans-serif, 'klavika';
 }
 
 .char-a {
     font-family: 'Mulish', sans-serif;
     color: #2d72fd;
-
     font-weight: 700;
+    font-size: 3.4rem;
+}
+
+.char-k {
+    font-family: 'klavika', sans-serif;
+    color: #2d72fd;
+    font-weight: 700;
+    font-size: 3.4rem;
 }
 
 .title-section>p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #000000;
 
 }
 
 .card {
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     flex-flow: column;
     align-items: center;
     background-color: #ffffff;
-    width: 400px;
-    height: 390px;
-    padding: 15px 15px;
+    width: 339px;
+    height: 300px;
+    padding: 12px 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
 }
 
 .card>input {
     display: block;
-    height: 55px;
+    height: 45px;
     width: 98%;
     margin-bottom: 15px;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
 .text-inputs {
-    padding: 3px 10px;
+    font-size: 0.9rem;
+    padding: 3px 15px;
     font-weight: 400;
-    border: 1px solid #c8cdd6;
+    color: #7e8186;
+    border: 1px solid #c2c7d1;
 }
 
+#smallUserId {
+    display: none;
+} 
+
 .card>p {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .card>hr {
     width: 98%;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #fcfcfc;
 }
 
@@ -98,8 +164,9 @@ body {
 }
 
 #btn-login {
+    height: 40px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background-color: #2d72fd;
     box-shadow: 0px 0px 2px 0px #2d72fd;
     border: none;
@@ -110,7 +177,7 @@ body {
 #btn-forgot {
     text-decoration: none;
     color: #2d72fd;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 #btn-forgot:hover {
@@ -119,14 +186,15 @@ body {
 }
 
 #btn-create-account {
+    height: 42px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: #34b134;
     box-shadow: 0px 0px 2px 0px #34b134;
     border: none;
     font-weight: bold;
     color: #ffffff;
-    width: 220px;
+    width: 180px;
 }
 
 #btn-create-account:hover {
@@ -134,8 +202,9 @@ body {
 }
 
 #create-page {
+    font-size: 0.7rem;
     position: absolute;
-    margin-top: 400px;
+    margin-top: 310px;
 }
 
 
@@ -149,6 +218,7 @@ body {
     margin-bottom: 10px;
 
 }
+
 .android-popup {
     display: none;
 }
@@ -158,12 +228,21 @@ body {
     .container {
         display: grid;
         grid-template-columns: auto;
-        margin-top: 5vh;
+        margin-top: 2vh;
         gap: 0;
+
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #smallUserId {
+        display: none;
     }
 
     .title-section>h1 {
-        font-size: 4.3rem;
         text-align: center;
     }
 
@@ -173,11 +252,19 @@ body {
     }
 
     .title-section {
-        margin-bottom: 40px;
+        margin-bottom: -50px;
     }
 
     .disclaimer-section {
         text-align: center;
+    }
+
+    .footer-hr {
+        width: 100%;
+    }
+
+    .small-footer-container {
+        display: none;
     }
 
 }
@@ -197,7 +284,14 @@ body {
     }
 
     .char-a {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+    }
+
+    .char-k {
+        font-family: 'klavika', sans-serif;
+        color: #2d72fd;
+        font-weight: 700;
+        font-size: 1.8rem;
     }
 
     .card {
@@ -252,6 +346,10 @@ body {
         display: none;
     }
 
+    #smallUserId {
+        display: none;
+    }
+
     .title-section>p {
         display: none;
 
@@ -283,13 +381,76 @@ body {
     .fa-mobile-screen {
         color: #23468b;
     }
+
+    .footer-hr {
+        width: 93%;
+    }
+
+    .list {
+        margin: 0 20px;
+    }
+
+    .small-footer-container {
+        display: none;
+    }
+
 }
 
 /* Mobile phones */
 @media (max-width: 647px) {
+
+    .card {
+        margin: 0 0;
+    }
+
+    #btn-forgot {
+        font-size: 0.9rem;
+    }
+
+    #smallUserId {
+        display: block;
+    }
+
+    #bigUserId {
+        display: none;
+    }
+
+    .char-a {
+        font-size: 1.9rem;
+    }
+
+    .footer-container {
+        display: none;
+    }
+
+    footer {
+        background-color: #f0f2f5;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 2vh;
+        width: 100%;
+        height: 145px;
+        background-color: #f0f2f5;
+    }
+
+    .small-footer-container {
+        background-color: #f0f2f5;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fa-square-plus {
+        font-size: 1rem;
+    }
+
     .card {
         width: 98vw;
     }
+
     .hr {
 
         font-size: 0.9rem;
