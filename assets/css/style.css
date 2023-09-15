@@ -227,13 +227,13 @@ body {
     .hr {
         display: inline;
         color: #b4b4b4;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .or {
         display: inline;
         color: #000;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 0px 10px;
     }
 
@@ -276,7 +276,7 @@ body {
 
     .hr {
 
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .or {
