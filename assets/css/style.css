@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap');
 
 @font-face {
     font-family: "klavika";
@@ -38,9 +36,10 @@ body {
 }
 
 .char-a {
-    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
     color: #2d72fd;
-    font-weight: bold;
+    
+    font-weight: 700;
 }
 
 .title-section>p {
@@ -138,13 +137,13 @@ body {
 }
 
 
-.empty-section {
+.disclaimer-section {
     text-align: center;
     grid-column: 1 / 3;
 
 }
 
-.empty-section>p {
+.disclaimer-section>p {
     margin-bottom: 10px;
 
 }
@@ -160,14 +159,11 @@ body {
 
     .title-section>h1 {
         font-size: 4.3rem;
-        color: #2d72fd;
-        font-family: 'klavika', sans-serif;
         text-align: center;
     }
 
     .title-section>p {
         font-size: 1.6rem;
-        color: #000000;
         text-align: center;
     }
 
@@ -175,23 +171,8 @@ body {
         margin-bottom: 40px;
     }
 
-    .card {
-        margin-left: auto;
-        margin-right: auto;
-        width: 400px;
-        height: 390px;
-        padding: 15px 15px;
-        border-radius: 8px;
-
-    }
-
-     
-
-    .empty-section {
-        margin: 0px 20px;
+    .disclaimer-section {
         text-align: center;
-        grid-column: 1;
-
     }
 }
 
@@ -207,13 +188,15 @@ body {
         font-size: 3.3rem;
         text-align: center;
     }
+    .char-a {
+        font-size: 2rem;
+    }
 
     .card {
         border: none;
-        width: 83vw;
+        width: 100vw;
         box-shadow: none;
         background-color: #f5f5f5b0;
-        max-width: 500px;
     }
 
 
@@ -222,7 +205,7 @@ body {
         border: 1px solid #bebdbd;
         height: 45px;
     }
-    
+
 
     .hr {
         display: inline;
@@ -238,7 +221,7 @@ body {
     }
 
     #btn-create-account {
- 
+
         font-size: 0.9rem;
         background-color: #f5f5f5b0;
         font-weight: 400;
@@ -292,6 +275,6 @@ body {
         font-size: 0.8rem;
     }
 
- 
+
 
 }
