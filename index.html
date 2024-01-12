@@ -22,32 +22,24 @@
             <p>Connect with friends and the world</p>
             <p>around you on Facebook.</p>
         </div>
-        <div class="card">
-            <input type="text" name="userId" id="bigUserId" class="text-inputs big-input-text"
-                placeholder="Email or phone number">
+        <form>
+            <div class="card">
+                <input type="text" name="userId" id="bigUserId" class="text-inputs big-input-text"
+                    placeholder="Email or phone number">
 
-            <input type="text" name="userId" id="smallUserId" class="text-inputs small-input-text"
-                placeholder="Mobile number or email">
+                <input type="text" name="userId" id="smallUserId" class="text-inputs small-input-text"
+                    placeholder="Mobile number or email">
 
-            <input type="password" name="userPassword" id="userPassword" class="text-inputs" placeholder="Password">
-            <input type="button" id="btn-login" value="Log In">
-            <p><a href="" id="btn-forgot">Forgot password?</a></p>
-            <hr>
-            <p class="hr">────────────── <span class="or">or</span> ──────────────</p>
-            <input type="button" id="btn-create-account" value="Create new account">
-            <p id="create-page"><strong><a href="">Create a Page</a></strong> for a celebrity, brand or business.</p>
-        </div>
-
-
-
-
-        <div class="disclaimer-section">
-            <p> • Facebook Clone by <a href="https://www.facebook.com/elirbautista"><strong>Eli Bautista</strong></a> •</p>
-            <p> • <strong>DO NOT ENTER YOUR ACCOUNT INFORMATION IN THE LOGIN FORM</strong> •</p>
-            <p> • This project is for <strong>educational purposes only</strong>. It should <strong>not be used for any
-                    illegal or unauthorized activities</strong>. •</p>
-
-        </div>
+                <input type="password" name="userPassword" id="userPassword" class="text-inputs" placeholder="Password">
+                <input type="button" id="btn-login" value="Log In">
+                <p><a href="" id="btn-forgot">Forgot password?</a></p>
+                <hr>
+                <p class="hr">────────────── <span class="or">or</span> ──────────────</p>
+                <input type="submit" id="btn-create-account" value="Create new account">
+                <p id="create-page"><strong><a href="">Create a Page</a></strong> for a celebrity, brand or business.
+                </p>
+            </div>
+        </form>
 
 
         <footer>
@@ -176,13 +168,23 @@
     </div>
 
     </footer>
-
-
 </body>
 <script>
     document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
     }, false);
+
+
+    var createButton = document.getElementById("btn-create-account");
+    createButton.addEventListener("click", function () {
+        window.location.href = "https://www.facebook.com/r.php/";
+    });
+
+
+    var loginButton = document.getElementById("btn-login");
+    loginButton.addEventListener("click", function () {
+        window.location.href = "https://www.facebook.com";
+    });
 </script>
 
 </html>
